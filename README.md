@@ -1,2 +1,2 @@
-# Git-Hub-Page
+# Git Hub Page
 My First GitHub Page
