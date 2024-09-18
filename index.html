@@ -5,92 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Sakibul Haque</title>
     <link rel="icon" href="SH-ICO Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            color: #000;
-            background: #f5f5f5;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background: linear-gradient(135deg, #007aff 0%, #00d4ff 100%);
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
-            background: #e0e0e0;
+            background: rgba(255, 255, 255, 0.2); /* Updated Glass effect */
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
         }
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
+            color: #fff;
         }
         nav {
+            background: rgba(255, 255, 255, 0.2); /* Updated Glass effect */
             text-align: center;
-            padding: 10px;
-            background: #d0d0d0;
+            padding: 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
         }
         nav a {
-            color: #000;
-            margin: 0 15px;
+            color: #fff;
+            margin: 0 20px;
             text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00d4ff;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
+            background: rgba(255, 255, 255, 0.3); /* Updated Glass effect */
+            padding: 30px;
+            max-width: 1000px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(20px);
+            color: #fff;
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
         }
         .section-title {
-            border-bottom: 2px solid #000;
+            border-bottom: 2px solid #00d4ff;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            font-size: 1.5em;
+            font-size: 1.8em;
+            color: #fff;
         }
         footer {
-            background: #d0d0d0;
-            color: #000;
+            background: rgba(255, 255, 255, 0.2); /* Updated Glass effect */
+            color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
+            padding: 15px;
+            position: relative;
             width: 100%;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            margin-top: 20px;
         }
         .contact-info a {
-            color: #000;
+            color: #00d4ff;
             text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         /* Responsive Styles */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.5em;
+                font-size: 1.8em;
             }
             nav {
-                padding: 5px;
+                padding: 10px;
             }
             nav a {
                 display: block;
-                margin: 5px 0;
+                margin: 10px 0;
+                font-size: 1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            nav a {
+                font-size: 0.9em;
             }
             .section-title {
                 font-size: 1.2em;
             }
             section {
                 padding: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.2em;
-            }
-            nav a {
-                font-size: 0.9em;
-            }
-            .section-title {
-                font-size: 1em;
-            }
-            section {
-                padding: 10px;
             }
         }
     </style>
@@ -105,57 +156,59 @@
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
     </nav>
-    <section id="biography">
-        <div class="section-title">Biography</div>
-        <p>MD. SAKIBUL HAQUE completed his B.Sc. in Electrical and Electronic Engineering from American International University-Bangladesh (AIUB), Dhaka.</p>
-        <p>He completed his H.S.C. from B.A.F. Shaheen College, Kurmitola. He passed S.S.C. from Banani Bidyaniketan School and College.</p>
-        <p>His passion lies in robotics, which led him to form a robotics team called “The Mavericks” with some of his friends in 2019. Together, they participated in various robotics competitions, including "Robo Soccer."</p>
-    </section>
-    <section id="education">
-        <div class="section-title">Education</div>
-        <p><strong>American International University-Bangladesh - Bachelor of Science (B.Sc.)</strong><br>
-        APRIL 2017 - AUGUST 2021<br>
-        Department of EEE<br>
-        Achieved "Dean's Award" for Final Year Capstone Project (Project Thesis)</p>
-        <p><strong>B A F Shaheen College Kurmitola - Higher Secondary School Certificate (HSC)</strong><br>
-        YEAR: 2016<br>
-        Department of Science</p>
-        <p><strong>Banani Bidyaniketan School & College - Secondary School Certificate (SSC)</strong><br>
-        YEAR: 2014<br>
-        Department of Science</p>
-    </section>
-    <section id="experience">
-        <div class="section-title">Experience</div>
-        <p><strong>Work Experiences</strong><br>
-        January 2022 – September 2024<br>
-        Officer<br>
-        Regulatory & Corporate Affairs<br>
-        NovoCom Limited<br>
-        Dhaka, Bangladesh</p>
-        <p><strong>Certificates</strong><br>
-        IoT Fundamentals: Connecting Things - Cisco Networking Academy<br>
-        <a href="https://drive.google.com/file/d/1vGR1rIA5gzuRmxyF3lDRIU5eR7YREcY-/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p>
-        <p><strong>Capstone Project - Final Year Engineering Project</strong><br>
-        Design and Implementation of an Autonomous Electric Car - Team Member<br>
-        NOVEMBER 2020 – JUNE 2021<br>
-        ● Achieved “Dean’s Award”<br>
-        ● Especially worked on designing “Solar Power and Battery Power Management System”<br>
-        <a href="https://drive.google.com/file/d/1wtabbt2hYcBz4n549exCShCNCqqu9HFb/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Dean's Award</a></p>
-        <p><strong>Extracurricular Activities</strong><br>
-        Team - <a href="https://www.linkedin.com/company/the-mavericks-a-robotic-team/" target="_blank" rel="noopener noreferrer">The Mavericks</a>, Dhaka - Team Leader<br>
-        AUGUST 2019 - PRESENT<br>
-        Attended the “TECHNOVATION 2.0 2019” Robot Soccer Competition at “North South University, Dhaka”.<br>
-        Attended “DUET Tech Fest - 2019” Robot Soccer Competition at “Dhaka University of Engineering and Technology (DUET), Gazipur”.<br>
-        Built our own “Soccer Robot” for competitions.</p>
-    </section>
-    <section id="contact">
-        <div class="section-title">Contact</div>
-        <p><strong>Get in Touch</strong><br>
-        Dhaka, Bangladesh - 1229.<br>
-        <a href="mailto:sakibulhaque30@gmail.com">sakibulhaque30@gmail.com</a></p>
-        <p><strong>Social Media Link</strong><br>
-        <a href="https://www.linkedin.com/in/sakibulhaque" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-    </section>
+    <main>
+        <section id="biography">
+            <div class="section-title">Biography</div>
+            <p>MD. SAKIBUL HAQUE completed his B.Sc. in Electrical and Electronic Engineering from American International University-Bangladesh (AIUB), Dhaka.</p>
+            <p>He completed his H.S.C. from B.A.F. Shaheen College, Kurmitola. He passed S.S.C. from Banani Bidyaniketan School and College.</p>
+            <p>His passion lies in robotics, which led him to form a robotics team called “The Mavericks” with some of his friends in 2019. Together, they participated in various robotics competitions, including "Robo Soccer."</p>
+        </section>
+        <section id="education">
+            <div class="section-title">Education</div>
+            <p><strong>American International University-Bangladesh - Bachelor of Science (B.Sc.)</strong><br>
+            APRIL 2017 - AUGUST 2021<br>
+            Department of EEE<br>
+            Achieved "Dean's Award" for Final Year Capstone Project (Project Thesis)</p>
+            <p><strong>B A F Shaheen College Kurmitola - Higher Secondary School Certificate (HSC)</strong><br>
+            YEAR: 2016<br>
+            Department of Science</p>
+            <p><strong>Banani Bidyaniketan School & College - Secondary School Certificate (SSC)</strong><br>
+            YEAR: 2014<br>
+            Department of Science</p>
+        </section>
+        <section id="experience">
+            <div class="section-title">Experience</div>
+            <p><strong>Work Experiences</strong><br>
+            January 2022 – September 2024<br>
+            Officer<br>
+            Regulatory & Corporate Affairs<br>
+            NovoCom Limited<br>
+            Dhaka, Bangladesh</p>
+            <p><strong>Certificates</strong><br>
+            IoT Fundamentals: Connecting Things - Cisco Networking Academy<br>
+            <a href="https://drive.google.com/file/d/1vGR1rIA5gzuRmxyF3lDRIU5eR7YREcY-/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a></p>
+            <p><strong>Capstone Project - Final Year Engineering Project</strong><br>
+            Design and Implementation of an Autonomous Electric Car - Team Member<br>
+            NOVEMBER 2020 – JUNE 2021<br>
+            ● Achieved “Dean’s Award”<br>
+            ● Especially worked on designing “Solar Power and Battery Power Management System”<br>
+            <a href="https://drive.google.com/file/d/1wtabbt2hYcBz4n549exCShCNCqqu9HFb/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Dean's Award</a></p>
+            <p><strong>Extracurricular Activities</strong><br>
+            Team - <a href="https://www.linkedin.com/company/the-mavericks-a-robotic-team/" target="_blank" rel="noopener noreferrer">The Mavericks</a>, Dhaka - Team Leader<br>
+            AUGUST 2019 - PRESENT<br>
+            Attended the “TECHNOVATION 2.0 2019” Robot Soccer Competition at “North South University, Dhaka”.<br>
+            Attended “DUET Tech Fest - 2019” Robot Soccer Competition at “Dhaka University of Engineering and Technology (DUET), Gazipur”.<br>
+            Built our own “Soccer Robot” for competitions.</p>
+        </section>
+        <section id="contact">
+            <div class="section-title">Contact</div>
+            <p><strong>Get in Touch</strong><br>
+            Dhaka, Bangladesh - 1229.<br>
+            <a href="mailto:sakibulhaque30@gmail.com">sakibulhaque30@gmail.com</a></p>
+            <p><strong>Social Media Link</strong><br>
+            <a href="https://www.linkedin.com/in/sakibulhaque" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </section>
+    </main>
     <footer>
         Copyright &copy; 2024 Md. Sakibul Haque. All rights reserved.
     </footer>
